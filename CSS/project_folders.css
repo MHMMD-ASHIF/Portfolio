@@ -1,0 +1,173 @@
+
+.project_folder_section{
+    padding-top: 6%;
+    height: auto;
+    /* margin-top:10px; */
+
+}
+.project_folder_section h3{
+    text-align: center;
+    color: #ccd6f6;
+    font-size:30px;
+    line-height: 2;
+    font-weight: 700;
+    font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;;
+}
+.project_folder_section h4{
+    color:#64ffda;
+    text-align: center;
+    font-weight: 400;
+    line-height: 2;
+    font-size: 16px;
+}
+.project_folder_section .project_boxes  .ul{
+    list-style: none;
+    padding: 0px;
+    margin: 50px 0px 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    position: relative;
+}
+
+.project_folder_section .project_boxes .list {
+    /* max-width:315px;
+    max-height:325px; */
+    min-width:auto; 
+    min-height:auto;
+    background-color:#102241;
+    display: list-item;
+    top: 0;
+    transition: top ease 0.5s;
+    position: relative;
+    border-radius: 4px;
+    padding: 30px;
+    text-align:left;
+}   
+.project_folder_section .project_boxes .project_head{
+    display:flex;
+    justify-content:space-between;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+}
+.project_folder_section .project_boxes .project_inner{
+    box-shadow: 0 5px 10px -15px rgba(2,12,27,0.7);;
+}
+.project_folder_section .project_boxes .project_head .folder{
+    color:#64ffda;
+}
+.project_folder_section .project_boxes .project_head .folder i{
+    font-size:28px;
+}
+.project_folder_section .project_boxes .project_head .link{
+    color: #a8b2d196;
+    margin-right: 10px;
+
+}
+.project_folder_section .project_boxes .project_head .link i:hover{
+    color:#64ffda;
+}
+.project_folder_section .project_boxes .project_head .link i{
+    font-size:20px;
+    margin-top: 5px;  
+}
+
+.project_folder_section .project_boxes .project_title h2{
+    color: #CAD4F5;
+    margin-top: 30px;
+    /* font-size:25px; */
+    font-weight: 500;
+    font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;;
+
+}
+.project_folder_section .project_boxes .project_title h2 a{
+    color: #CAD4F5;
+    font-weight: 500;
+    font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;;
+
+}
+.project_folder_section .project_boxes .project_description p{
+    line-height: 1.5;
+    font-size:15px;
+    color:#a8b2d1;
+    max-width: auto;
+    margin-top:20px;
+    font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;;
+
+}
+svg{
+    width:26px;
+
+}
+svg path{
+    fill:#a8b2d196;
+}
+.project_folder_section footer{
+    margin-top:30px;
+
+}
+.project_folder_section header{
+    min-height: 240px;
+    max-width: auto;
+}
+.project_folder_section footer li{
+    color:#a8b2d196;
+    display: inline;
+    margin-right: 5px;
+    font-weight:400; 
+    font-size: 13px;  
+}
+.project_folder_section .show_more, .show_less{
+    text-align: center;
+    
+}
+
+.project_folder_section .show_more button , .show_less button{
+    /* padding: 18px; */
+    font-size: 15px;
+    width:140px;
+    height: 55px;
+    background-color: transparent;
+    color: #64ffda;
+    border: 1px solid #64ffda;
+    border-radius:4px;
+    margin-top:60px;
+    margin-left: .5%;
+    margin-bottom: 140px;
+    font-family:"SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    
+}
+.project_folder_section .show_more  button:hover, .show_less button:hover{
+    color: #64ffda;
+    background:#1b5d5d7a;
+}
+.project_folder_section .project_boxes .list:hover {
+   top: -7px;
+   /* bottom: 10px; */
+   
+}
+
+.project_folder_section .project_boxes .list:hover   h2 a{
+    color: #64ffda;
+}
+
+
+
+@media(max-width :980px){
+    .project_folder_section{
+        margin-left: 7%;
+        margin-right: 7%;
+    }
+    .project_folder_section h3{
+        text-align: center;
+        margin-top:50px;
+        font-size:30px;
+    }
+    .project_folder_section .project_boxes .list .project_title h2{
+        font-size:22px
+    }
+    .project_folder_section footer li {
+        font-size:13px;
+       
+    }
+}

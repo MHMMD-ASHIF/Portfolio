@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html manifest="manifest.appcache">
+
+<head>
+  <meta charset="UTF-8">
+  <title>MA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+  <link rel="shortcut icon" type="x-icon" href="./assets/logo_icon.png">
+
+  <link rel="stylesheet" href="./CSS/style.css">
+  <link rel="stylesheet" href="./CSS/nav.css">
+  <link rel="stylesheet" href="./CSS/home_page.css">
+  <link rel="stylesheet" href="./CSS/about_me.css">
+  <link rel="stylesheet" href="./CSS/education_page.css">
+  <link rel="stylesheet" href="./CSS/project.css">
+  <link rel="stylesheet" href="./CSS/project_vox.css">
+  <link rel="stylesheet" href="./CSS/project_folders.css">
+  <link rel="stylesheet" href="./CSS/contact_me.css">
+
+  <script src="https://kit.fontawesome.com/c3d51c6cf4.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
+  </script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="manifest" href="./manifest.json">
+
+
+  <!-- CSS only -->
+  <!-- b<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> -->
+  <!-- JavaScript Bundle with Popper -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script> -->
+
+  <style>
+    button {
+      outline: none;
+    }
+  </style>
+
+
+</head>
+
+<body>
+
+
+  <nav id="navbar">
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <img src="./assets/hamburger_final.png" class="hamburger" style="margin-top: 20px;">
+      <img src="./assets/hamburger_final.png" class="cancel_burg2"
+        style="display:none;margin-top: 20px;transform: scaleX(1); ">
+
+    </label>
+
+    <label class="logo"><a href="./index.html"><img src="./assets/logo.png" title="Logo"></a></label>
+
+    <ul class="navbar-nav">
+      <li><a href="#about_page_main" class="p1">
+          <p>01. </p> About
+        </a></li>
+      <li><a href="#education_page" class="p2">
+          <p>02. </p> Education
+        </a></li>
+      <li><a href="#project_sec" class="p3">
+          <p>03. </p>Projects
+        </a></li>
+      <li><a href="#contact_me" class="p4">
+          <p>04. </p> Contact
+        </a></li>
+      <li><a href="./assets/MUHAMMED_ASHIF_AR.pdf" target="_blank"><button>Resume</button></a></li>
+    </ul>
+    <div class="hello"></div>
+  </nav>
+  <div class="loader_bg">
+    <div class="loader" id="ld">
+      <img src="./assets/logo.png" title="Logo">
+    </div>
+  </div>
+
+  <div class="fixed">
+    <div class="left_div">
+      <ul class="final_icon">
+        <a href="https://github.com/MHMMD-ASHIF" target="_blank" title="GitHub">
+          <li><i id="git" class="fa-brands fa-github"></i></li>
+        </a>
+        <a href="https://www.instagram.com/an_the_m/" target="_blank" title="Instagram">
+          <li><i id="instagram" class="fa-brands fa-instagram"></i></li>
+        </a>
+        <a href="https://twitter.com/MHMD_ASHIF" target="_blank" title="Twitter">
+          <li><i id="twitter" class="fa-brands fa-twitter"></i></li>
+        </a>
+        <a href="https://linkedin.com/in/muhammed-ashif" target="_blank" title="Linked-In">
+          <li><i id="linked_in" class="fa-brands fa-linkedin"></i></li>
+        </a>
+
+
+      </ul>
+
+
+    </div>
+
+
+    <div class="right_div" style="float: right;">
+      <div class="final_icon2">
+        <a href="mailto:aashy135@gmail.com" target="_blank">
+          <p id="mail">aashy135@gmail.com</p>
+        </a>
+      </div>
+      <!-- <div class="vertical"></div> -->
+
+    </div>
+  </div>
+
+
+  <main class="main_main">
+    <section class="about_page">
+      <div class="about_content">
+        <p class="p_sub">Hi, my name is</p>
+        <h1 class="header_name">Muhammed Ashif.</h1>
+        <h1 class="sub_head">Web Developer.</h1>
+        <p class="p_sub2">I’m a software engineer specializing in building (and occasionally designing) exceptional
+          digital experiences. Currently, I’m focused on building web applications, web sites and <a
+            href="https://github.com/MHMMD-ASHIF/VOX-personal-voice-assistant" target="_blank"><strong>Python
+              Programming.</strong></a> </p><br>
+        <a href="https://github.com/MHMMD-ASHIF" target="_blank"><button class="button_btn">Explore!</button></a>
+      </div>
+    </section>
+
+
+    <section class="about_page_main" id="about_page_main" data-aos="fade-up">
+      <ul>
+        <div class="row">
+          <div class="col-lg-6 col-sm-12">
+            <div class="about_page_main_content" data-aos="fade-right">
+              <p style="display:inline;" id="p_head">01. <strong>About Me</strong></p>
+              <p>Hello! My name is Muhammed Ashif and I enjoy creating things that live on the internet. My interest in
+                web development started back in 2021 — turns out hacking together a custom reblog button taught me a lot
+                about HTML & CSS!</p>
+              <p>Fast-forward to today, and I have the privilege of work at an web developing company, a start-up, a
+                huge
+                corporation, and a student-led design corp. My main focus these days is building websites, e-commerse
+                web
+                applications and personal portfolio at Upstatement for a variety of clients.</p>
+              <p>I also recently joined a course that covers everything need to build a web application with Django and
+                Angular.</p>
+              </p>
+              <p style="margin-left: -2%;">Here are a few technologies I’ve been working with recently:</p>
+
+              <ul class="ul_list">
+                <li>HTML5</li>
+                <li>CSS</li>
+                <li>Python</li>
+                <li>SQL</li>
+                <li>Angular</li>
+                <li>Javascript</li>
+                <li>Bootstrap</li>
+                <li>Adobe XD</li>
+              </ul>
+
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-12 final_img">
+            <div class="image_boder">
+
+              <div class="image" data-aos="fade-left" style="margin-bottom: 50px;">
+                <img src="./assets/profile_final.png">
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </ul>
+    </section>
+
+
+
+
+
+    <section class="education_section" id="education_page" data-aos="fade-up">
+      <h5 class="heading">02. <strong>Academics</strong></h5><br>
+      <div class="btn_head" style="margin-top:80px;">
+        <div class="button_list active">
+          <button class="btn_fullstack active_btn django">Django Fullstack</button>
+          <button class="btn_fullstack pg">Post Graduation</button>
+          <button class="btn_fullstack ug">Under Graduation</button>
+          <button class="btn_fullstack school">Schooling</button>
+        </div>
+
+        <div class="education_content">
+
+          <div class="fullstack_contant_django content_active">
+            <h2 id="head">Web development <strong>@ </strong><a href="https://www.luminartechnolab.com/"
+                target="_blank">Luminar</a></h2>
+            <h4 id="course">Python Django Fullstack</h4>
+            <p id="year">April 2022 - Present</p><br>
+            <p id="description">
+            <ul>
+              <li>
+                Perusing Python django full stack crash course for improve coding and problem solving skills.
+              </li>
+              <li>
+                Subjects inclusive of HTML5, CSS, Bootstrap, Python, SQL, Django framework, and Angular framework.
+              </li>
+              <li>
+                This course presents a structured approach to problem analysis, web designing and solution
+                implementation
+                in a high-level language.
+
+              </li>
+            </ul>
+            </p>
+
+          </div>
+
+
+          <div class="fullstack_contant_pg" style="display:none">
+            <h2 id="head">Post Graduation <strong>@ </strong><a href="https://ststephens.net.in/"
+                target="_blank">St.Stephen's</a></h2>
+            <h4 id="course">MSc Computer Science</h4>
+            <p id="year">June 2019 - September 2021</p><br>
+            <p id="description">
+            <ul>
+              <li>
+                Successfully passed the Advanced level examination in september 2021 with first class grade.
+              </li>
+              <li>
+                Subjects inclusive of Python, php, HTML, Database management data mining, Oops concepts and
+                computational mathematics.
+              </li>
+            </ul>
+            </p>
+          </div>
+
+
+          <div class="fullstack_contant_ug" style="display:none">
+            <h2 id="head">Under Graduation <strong>@ </strong><a href="http://www.sngasc.ac.in/"
+                target="_blank">SNGC</a></h2>
+            <h4 id="course">BSc Computer Science</h4>
+            <p id="year">June 2016 - April 2019</p><br>
+            <p id="description">
+            <ul>
+              <li>
+                Successfully passed the Advanced level examination in 2019 with first class grade.
+              </li>
+              <li>
+                Subjects inclusive of Database management, Java, c++, data mining, and computational mathematics.
+              </li>
+            </ul>
+            </p>
+          </div>
+
+
+          <div class="fullstack_contant_school" style="display:none">
+            <h2 id="head">Schooling <strong>@ </strong><a
+                href="https://schools.org.in/palakkad/32060700309/ghss-karimba.html" target="_blank">GHSS</a></h2>
+            <h4 id="course">SSLC & Plus two</h4>
+            <p id="year">June 2013 - April 2016</p><br>
+            <p id="description">
+            <ul>
+              <li>
+                Successfully passed the SSLC board examination in 2014 with first class grade.
+              </li>
+              <li>
+                Successfully passed the Higher secondary biology science board examination in 2016 with 65 percentage.
+              </li>
+              <li>
+                Subjects inclusive of Mathematics, Biology science, physics, chemistry with decent grade.
+              </li>
+            </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <section class="project_section" id="project_sec">
+      <h2>
+        <p>03. </p> Projects I've Built
+      </h2>
+
+
+      <div class="project_images" data-aos="fade-up">
+        <div class="project_images_one" data-aos="fade-up">
+
+          <div class="project_img">
+            <img src="./assets/one.png">
+          </div>
+
+          <div class="project_img_content">
+            <h4>Feature project</h4>
+            <a href="https://github.com/MHMMD-ASHIF/Daily-nutrition-care-Dcare" target="_blank">
+              <h3>Daily Nutrition Care</h3>
+            </a>
+            <div class="project_back">
+              <p>Daily Nutrition Care is a Web application for schedule our food intake and supplement
+                distribution. The users can easily understand about food intake.</p>
+            </div>
+            <p>
+            <ol>
+              <li>VS code</li>
+              <li>Python</li>
+              <li>Django</li>
+              <li>Html</li>
+              <li>Css</li>
+              <li>JS</li>
+            </ol>
+            </p>
+            <p>
+            <ul>
+              <a href="https://github.com/MHMMD-ASHIF/Daily-nutrition-care-Dcare" target="_blank" title="GitHub"><i
+                  class="fa-brands fa-github"></i></a>
+              <a href="./assets/dcare--.png" target="_blank" title="Preview"><i class="fa-solid fa-expand"></i></a>
+            </ul>
+            </p>
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="margin" style="margin-bottom:20%">
+        <div class="project_images_two" style="margin-left: 0%; ">
+
+          <div class="project_img_two" style="float:right; " data-aos="fade-up">
+            <img src="./assets/vs2.png">
+          </div>
+
+          <div class="project_img_content_two" style="float:right;" data-aos="fade-up">
+            <h4>Feature project</h4>
+            <a href="https://github.com/MHMMD-ASHIF/VOX-personal-voice-assistant" target="_blank">
+              <h3>VOX Assistant</h3>
+            </a>
+            <div class="project_back_two">
+              <p>VOX is a personal Voice Assistant for PC. It is easy to operate and efficient. Developed by
+                PYTHON. VOX interpret human speech and respond via synthesized voices.</p>
+            </div>
+
+            <p>
+            <ol>
+              <li>VS code</li>
+              <li>Python</li>
+              <li>Tkinter</li>
+              </p>
+              <p>
+              <ul>
+                <a href="https://github.com/MHMMD-ASHIF/VOX-personal-voice-assistant" target="_blank" title="GitHub"><i
+                    class="fa-brands fa-github">
+                    <title>GITHUB</title>
+                  </i></a>
+                <a href="./assets/Vox_pc.png" target="_blank" title="Preview"><i class="fa-solid fa-expand"></i></a>
+              </ul>
+              </p>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+
+    <section class="project_folder_section" data-aos="fade-up">
+      <h3 class="noteworthy">Noteworthy Projects</h3>
+      <h4>Features</h4>
+
+      <div class="project_boxes" data-aos="fade-up">
+        <ul class="ul">
+          <li class="list" data-aos="fade-up">
+            <div class="project_inner">
+              <header>
+                <div class="project_head">
+                  <div class="folder">
+                    <i class="fa-solid fa-folder"></i>
+                  </div>
+                  <div class="link">
+                    <a href="https://github.com/MHMMD-ASHIF/Daily-nutrition-care-Dcare" target="_blank"
+                      style="color: inherit; margin-right: 10px;"> <i class="fa-brands fa-github"></i></a>
+                    <a href="./assets/dcare--.png" target="_blank" style="color: inherit; "> <i
+                        class="fa-solid fa-expand"></i></a>
+                  </div>
+                </div>
+
+                <div class="project_title">
+                  <h2><a href="https://github.com/MHMMD-ASHIF/Daily-nutrition-care-Dcare" target="_blank">Daily
+                      Nutrition
+                      Care</a></h2>
+                </div>
+                <div class="project_description">
+                  <p>Daily Nutrition Care is a Web application for schedule our food intake and supplement distribution.
+                    The users can easily understand about food intake.</p>
+                </div>
+              </header>
+
+              <footer>
+                <div class="ft_items">
+                  <ul>
+                    <li>Python</li>
+                    <li>Html</li>
+                    <li>CSS</li>
+                    <li>Django</li>
+                    <li>JS</li>
+                  </ul>
+                </div>
+              </footer>
+            </div>
+          </li>
+
+          <li class="list">
+            <div class="project_inner">
+              <header>
+                <div class="project_head">
+                  <div class="folder">
+                    <i class="fa-solid fa-folder"></i>
+                  </div>
+                  <div class="link">
+                    <a href="https://github.com/MHMMD-ASHIF/VOX-personal-voice-assistant" target="_blank"
+                      style="color: inherit; margin-right: 10px;"> <i class="fa-brands fa-github"></i></a>
+                    <a href="./assets/Vox_pc.png" target="_blank" style="color: inherit; "> <i
+                        class="fa-solid fa-expand"></i></a>
+
+                  </div>
+                </div>
+
+                <div class="project_title">
+                  <h2><a href="https://github.com/MHMMD-ASHIF/VOX-personal-voice-assistant" target="_blank">VOX
+                      Assistant</a></h2>
+                </div>
+                <div class="project_description">
+                  <p>VOX is a personal Voice Assistant for PC. It is easy to operate and efficient. Developed by
+                    PYTHON. VOX interpret human speech and respond via synthesized voices.</p>
+                </div>
+              </header>
+
+              <footer>
+                <div class="ft_items">
+                  <ul>
+                    <li>Python</li>
+                    <li>Tkinter</li>
+                    <li>VS Code</li>
+
+                  </ul>
+                </div>
+              </footer>
+            </div>
+          </li>
+
+          <li class="list">
+            <div class="project_inner">
+              <header>
+                <div class="project_head">
+                  <div class="folder">
+                    <i class="fa-solid fa-folder"></i>
+                  </div>
+                  <div class="link">
+                    <a href="https://github.com/MHMMD-ASHIF/Face-Mask-Detector.git" target="_blank"
+                      style="color: inherit; margin-right: 10px;"> <i class="fa-brands fa-github"></i></a>
+                    <a href="./assets/R.png" target="_blank" style="color: inherit; "> <i
+                        class="fa-solid fa-expand"></i></a>
+
+                  </div>
+                </div>
+
+                <div class="project_title">
+                  <h2><a href="https://github.com/MHMMD-ASHIF/Face-Mask-Detector.git" target="_blank">Face Mask
+                      Detector</a></h2>
+                </div>
+                <div class="project_description">
+                  <p>The objectives of this project is to detect the presence of face masks for safety purposes due
+                    to the outbreak of covid-19 using Convocational Neural Network.</p>
+                </div>
+              </header>
+
+              <footer>
+                <div class="ft_items">
+                  <ul>
+                    <li>Python</li>
+                    <li>Tkinter</li>
+                    <li>VS Code</li>
+                  </ul>
+                </div>
+              </footer>
+            </div>
+          </li>
+
+
+          <li class="list hidden_on " style="display: none;">
+            <div class="project_inner">
+              <header>
+                <div class="project_head">
+                  <div class="folder">
+                    <i class="fa-solid fa-folder"></i>
+                  </div>
+                  <div class="link">
+                    <a href="https://github.com/MHMMD-ASHIF/Pupil-English-Learnring-app.git" target="_blank"
+                      style="color: inherit; margin-right: 10px;"> <i class="fa-brands fa-github"></i></a>
+                    <a href="./assets/feature.png" target="_blank" style="color: inherit; "> <i
+                        class="fa-solid fa-expand"></i></a>
+
+                  </div>
+                </div>
+
+                <div class="project_title">
+                  <h2><a href="https://github.com/MHMMD-ASHIF/Pupil-English-Learnring-app.git" target="_blank"
+                      class="sample_head">Pupil:English Learner</a></h2>
+                </div>
+                <div class="project_description">
+                  <p>PUPIL is an English learning android application for anyone, this application separates
+                    certain levels. It has detailed notes about English grammar and Quiz activity for test your skill.
+                  </p>
+                </div>
+              </header>
+
+              <footer>
+                <div class="ft_items">
+                  <ul>
+                    <li>Java</li>
+                    <li>XML</li>
+                    <li>Android</li>
+
+                  </ul>
+                </div>
+              </footer>
+            </div>
+          </li>
+
+
+          <li class="list hidden_two" style="display: none;">
+            <div class="project_inner">
+              <header>
+                <div class="project_head">
+                  <div class="folder">
+                    <i class="fa-solid fa-folder"></i>
+                  </div>
+                  <div class="link">
+                    <a href="https://github.com/MHMMD-ASHIF/VOX-personal-Assistant-Android.git" target="_blank"
+                      style="color: inherit; margin-right: 10px;"> <i class="fa-brands fa-github"></i></a>
+                    <a href="./assets/2.jpeg" target="_blank" style="color: inherit; "> <i
+                        class="fa-solid fa-expand"></i></a>
+                  </div>
+                </div>
+
+                <div class="project_title">
+                  <h2><a href="https://github.com/MHMMD-ASHIF/VOX-personal-Assistant-Android.git" target="_blank">VOX
+                      Assistant</a></h2>
+                </div>
+                <div class="project_description">
+                  <p>VOX is a personal Voice Assistant for Android. It is easy to operate and efficient. Developed by
+                    PYTHON. VOX interpret human speech and respond via synthesized voices.</p>
+                </div>
+              </header>
+
+              <footer>
+                <div class="ft_items">
+                  <ul>
+                    <li>Java</li>
+                    <li>XML</li>
+                    <li>Android</li>
+                  </ul>
+                </div>
+              </footer>
+            </div>
+          </li>
+
+
+
+          <li class="list hidden_three" style="display: none;">
+            <div class="project_inner">
+              <header>
+                <div class="project_head">
+                  <div class="folder">
+                    <i class="fa-solid fa-folder"></i>
+                  </div>
+                  <div class="link">
+                    <a href="https://github.com/MHMMD-ASHIF/E-shoppee.git" target="_blank"
+                      style="color: inherit; margin-right: 10px;"> <i class="fa-brands fa-github"></i></a>
+                    <a href="./assets/shoppie1.png" target="_blank" style="color: inherit; "> <i
+                        class="fa-solid fa-expand"></i></a>
+
+                  </div>
+                </div>
+
+                <div class="project_title">
+                  <h2><a href="https://github.com/MHMMD-ASHIF/E-shoppee.git" target="_blank">E-SHOPPE</a></h2>
+                </div>
+                <div class="project_description">
+                  <p>Electronic Commerce is process of doing business through computer networks. It simply help
+                    us for shopping, E-SHOPPE provides user friendly interaction and fast delivery.</p>
+                </div>
+              </header>
+
+              <footer>
+                <div class="ft_items">
+                  <ul>
+                    <li>Python</li>
+                    <li>Html</li>
+                    <li>CSS</li>
+                    <li>Django</li>
+                    <li>JS</li>
+                  </ul>
+                </div>
+              </footer>
+            </div>
+          </li>
+
+
+        </ul>
+      </div>
+
+
+
+      <div class="show_more" data-aos="fade-up">
+        <button>Show More</button>
+      </div>
+
+      <div class="show_less" style="display: none;" data-aos="fade-up">
+        <button>Show Less</button>
+      </div>
+    </section>
+
+    <section class="contact_me_section" id="contact_me" data-aos="fade-up">
+      <p class="para_one">04. <strong>What's Next?</strong></p>
+      <h1>Get in Touch</h1>
+      <p class="para_two">
+        Seeking an entry-level opportunity an estimated organization where I can utilize my skills and
+        enhance learning in the field of work capable of mastering new technologies.
+      </p>
+      <div class="about_bt">
+        <a href="mailto:aashy135@gmail.com" target="_blank"><button>Say Hello</button></a>
+      </div>
+
+
+      <footer>
+        <div class="social_icons">
+          <a href="https://github.com/MHMMD-ASHIF" target="_blank">
+            <li><i id="git" class="fa-brands fa-github"></i></li>
+          </a>
+          <a href="https://www.instagram.com/an_the_m/" target="_blank">
+            <li><i id="instagram" class="fa-brands fa-instagram"></i></li>
+          </a>
+          <a href="https://twitter.com/MHMD_ASHIF" target="_blank">
+            <li><i id="twitter" class="fa-brands fa-twitter"></i></li>
+          </a>
+          <a href="https://linkedin.com/in/muhammed-ashif" target="_blank">
+            <li><i id="linked_in" class="fa-brands fa-linkedin"></i></li>
+          </a>
+
+
+        </div>
+        <div class="designer">
+          <a href="https://github.com/MHMMD-ASHIF" target="_blank">
+            <p>Designed by Muhammed Ashif</p>
+          </a>
+        </div>
+      </footer>
+    </section>
+
+  </main>
+  <script type="text/javascript" src="./serviceWorker.js"></script>
+  <script type="text/javascript" src="./js/show_more.js"></script>
+  <script type="text/javascript" src="./js/nav_scroll.js"></script>
+  <script type="text/javascript" src="./js/active_nav.js"></script>
+  <script type="text/javascript" src="./js/active_btn.js"></script>
+  <script type="text/javascript" src="./js/btn_click_changr.js"></script>
+  <script type="text/javascript" src="./js/preloader.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script type="text/javascript" src="./js/transition.js"></script>
+  <script type="text/javascript" src="./js/scroll_lock.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(this).scrollTop(0);
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,252 @@
+
+.education_section{
+  padding-top: 10%;
+  height: 670px;
+}
+.education_section .btn_head{
+    display: flex;
+  }
+  .education_section h5{
+    color: #64ffda;
+    font-size: 22px;
+    font-weight: 500;
+    font-family:"SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    position: relative;
+    float:left;
+  
+  }
+  .education_section h5 strong{
+    font-weight: 700;
+    font-size: 30px;
+    color:#ccd6f6;
+    font-family:"Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+  
+    }
+  
+    .education_section h5::after{
+  
+      content: "";
+      display: inline;
+      float: right;
+      opacity:0.5;
+      width: 280px;
+      margin-left:15px;
+      margin-top: 5%;
+      height: .5px;
+      background-color: #a8b2d1aa;
+      
+      
+    }
+  
+  /* .education_section .button_list{
+    float: left;
+    display: block;
+    font-family:"SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+
+  } */
+  
+  .education_section .button_list button{
+    display: block;
+    height: 40px;
+    border-left: 2px solid #233554;
+    background-color:transparent;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 0px;
+    color: #8892b0;
+    padding-left:15px;
+    padding-bottom:30px;
+    padding-top: 15px;
+    width:150px;
+    text-align:left;
+    margin-right:60px;
+    
+    
+  }
+  .education_section .button_list  .active_btn{
+    border-left: 3px solid #64ffda;
+    background-color:#233554;
+    border-radius: 3px;
+    color: #64ffda;
+  }
+  .education_section .btn_fullstack:hover {
+   
+    backdrop-filter: blur(5px);
+    color: #64ffda;
+    background-color:rgba(42, 59, 84, 0.723);
+  
+  }
+  .education_section .education_content{
+    /* float:left; */
+    box-sizing: inherit;
+    transition: ease-in-out 1.5s;
+    max-width:500px;
+  }
+
+
+  
+  .education_section .education_content #year{
+    margin-top: -3%;
+    color: #8892b0;
+    font-size:14px;
+    font-weight:400;
+    font-family:"SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+
+  }
+  .education_section .education_content #course{
+    color: #8892b0;
+    margin-top: 2%;
+    font-weight: 500;
+    font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;;
+
+  }
+  .education_section .education_content #head{
+    font-size: 23px;
+    color:#ccd6f6;
+  }
+
+  .education_section .education_content #head a{
+ 
+    color: #64ffda;
+    
+
+  }
+  .education_section .education_content ul{
+    margin-top: -4%;
+  }
+  .education_section .education_content li{
+    
+    margin-bottom: 15px;
+    color: #8892b0;
+    font-size: 16px;
+    position: relative;
+    line-height: 1.5;
+    text-align: left;
+    padding-left: 30px;
+    
+  }
+  
+
+  .education_section .education_content  li::before{
+    margin-top:3px;
+    content: "▹";
+    position: absolute;
+    margin-right: 15px;
+    left: 0;
+    color: #64ffda;
+    font-size: var(--fz-sm);
+    line-height: 12px;
+  }
+  .education_section .education_content{
+    font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;;
+ 
+    
+  }
+  
+  .education_section .education_content a{
+    position: relative;
+  }
+  .education_section .education_content strong{
+    color:#64ffda;
+  }
+
+  .education_section .education_content a::after{
+    content: "";
+    position: absolute;
+    background-color: #64ffda;
+    height:1px;
+    width:0;
+    left:0;
+    bottom: -5px;
+    transition: 0.3s;
+    opacity: 0.5;
+  }
+
+  .education_section .education_content a:hover:after{
+    width: 100%;
+  }
+  
+
+  
+  
+  
+  
+  
+  
+  @media(max-width:980px){
+    .education_section{
+      max-width: 100%;
+      margin-left:3%;
+    
+  }}
+  @media (max-width: 767px){
+    .education_section h5::after{
+      width: 200px;
+    }
+    .about_page_main #p_head::after{
+      width: 200px;
+    }
+    
+    
+  }
+  @media (max-width: 750px){
+    .education_section h5::after{
+      display:none;
+      
+      
+    }
+    .education_section .button_list{
+      display: flex;
+      overflow-x: auto; 
+      overflow-y: hidden;
+      padding-left: 50px;
+      margin-left: -50px;
+      margin-bottom: 30px;
+    }
+    .education_section .button_list button{
+      height: 40px;
+      min-width:150px;
+      text-align:center;
+      margin-right:2px;
+      border-left: 0px;
+      background:none;
+      
+      
+    }
+    
+    .education_section .btn_head{
+      display: block;
+    }
+    .education_section .button_list  .active_btn{
+      border-left: 0px;
+      padding:0;
+      border-bottom: 4px solid #64ffda;
+      background:none;
+      outline: none;
+    
+    }
+
+    }
+   
+  @media (max-width: 657px){
+    .education_section h5::after{
+      width: 180px;
+    }
+    .about_page_main #p_head::after{
+      width: 180px;
+    }
+    .education_section{
+      height: 750px;
+    }
+    
+  }
+ 
+  /* @media(max-width: 907px)
+  {
+  
+    .education_section .button_list{
+      overflow: auto;
+      
+    }
+   
+  } */
